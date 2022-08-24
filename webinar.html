@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <title>😎 DPOE-N Webinar: Intro to CLI</title>
+        <title>😎 AMIA Webinar: Subtitle Display</title>
         <link rel="stylesheet" href="reveal.js/dist/reset.css">
         <link rel="stylesheet" href="reveal.js/dist/reveal.css">
         <link rel="stylesheet" href="reveal.js/dist/theme/materialocean.css" id="theme">
@@ -23,7 +23,7 @@
                 position:relative;
                 /*outline:1px solid red;*/
 	        }
-	        .colLCLI{
+	        .colLVid{
 		        flex:2;
 		        text-align:left;
                 align-self:flex-start;
@@ -46,7 +46,7 @@
                 /*width:75%;*/
                 /*border:1px solid yellow;*/
             }
-	        .colLCLI h3{
+	        .colLVid h3{
 		        text-align: left;
 		        text-transform: lowercase;
 	        }
@@ -85,55 +85,16 @@
         <div class="reveal">
             <div class="slides">
                 <section style="text-align:center;'">
-                    <h1>Intro to the Command Line Interface</h1><br>
-                    <h3>DPOE-N | 2022-05-04</h3><br>
+                    <h1>Web Display of Timed Text</h1><br>
+                    <h3>AMIA | 2022-09-15</h3><br>
                     <h5>with Brendan Coates (he|his)</h5><br>
                 </section>
-                <section style="text-align:center;">
-                    <h1>About Me</h1><br>
-                    gardener, technobabbler, LATU member<br><br>
-                    archivist specializing in AV and Oral Histories
-                </section>
                 <section>
-                    <h1>Agenda</h1><br><br>
-                    <section>
-                    </section>
-                    <section>
-                        <h3>Part 1</h3>
-                        <h3>History, Context, Objectives</h3><br>
-                        12pm-12:50pm EDT | 9am-9:50am PDT<br><br>
-                        Overview of the command line<br>
-                        Basic command line use<br>
-                        10min break
-                    </section>
-                    <section>
-                        <h3>Part 2</h3>
-                        <h3>Intro to Commands</h3><br>
-                        1pm-2pm EDT | 10am-11am PDT<br><br>
-                        System info<br>
-                        navigation<br>
-                        inputs and outputs
-                    </section>
-                    <section>
-                        <h3>LUNCH</h3><br>
-                        2pm-3pm EDT | 11am-12pm PDT
-                    </section>
-                    <section>
-                        <h3>Part 3</h3>
-                        <h3>CLI Tools for DigiPres</h3><br>
-                        3pm-3:50pm EDT | 12pm-12:50pm PDT<br><br>
-                        file movement, rsync<br>
-                        checksums, Bagit<br>
-                        10 minute break
-                    </section>
-                    <section>
-                        <h3>Part 4</h3>
-                        <h3>Intro to Scripting</h3><br>
-                        4pm-5pm EDT | 1pm-2pm PDT<br><br>
-                        setup, principles<br>
-                        command sequences, loops<br>
-                        managing scripts
-                    </section>
+                    <h3>Overview</h3>
+                    <h5>What we are gonna learn about</h5><br>
+                    Uniqueness of text files<br><br>
+                    Link btw preservation and access<br>
+                    <\t>for such "related" files<br>
                 </section>
                 <section>
                     <h1>Overview</h1><br>
@@ -201,7 +162,7 @@
                        <section>
                             <h2>How To Brake</h2>
                             <div class="twoColContainer">
-                                <div class="r-stack colLCLI">
+                                <div class="r-stack colLVid">
     			                    <div class="fragment fade-in-then-out">
                                         <h3>Stopping</h3>
                                         Interrupt process:<br>
@@ -231,7 +192,7 @@
                        <section>
                             <h2>Finding Help</h2>
                             <div class="twoColContainer">
-                                <div class="r-stack colLCLI">
+                                <div class="r-stack colLVid">
                                     <div class="fragment fade-in-then-out">
                                         <h3>man pages</h3>
                                         help within terminal<br>
@@ -260,7 +221,7 @@
                 <section>
                     <h2>Navigation</h2><br>
                     <div class="twoColContainer">
-			            <div class="r-stack colLCLI">
+			            <div class="r-stack colLVid">
     			            <div class="fragment fade-in-then-out">
         				        <h3>PWD</h3>
                                     "print working directory"<br><br>
@@ -323,7 +284,7 @@
                 <section>
                     <h2>Users & Permissions</h2><br>
                     <div class="twoColContainer">
-                      <div class="r-stack colLCLI">
+                      <div class="r-stack colLVid">
                         <div id="id_nG"class="fragment fade-in-then-out">
                           <h3>id</h3>
                           display user info<br><br>
@@ -356,7 +317,7 @@
             <section>
                 <h2>I/O, Redirection</h2><br>
                 <div class="twoColContainer">
-                     <div class="r-stack colLCLI">
+                     <div class="r-stack colLVid">
                       <div class="fragment fade-in-then-out">
                         <h3>prequel</h3>
                         "everything is a file"<br>
@@ -420,7 +381,7 @@
             <section>
                 <h2>Moving Files</h2><br>
                 <div class="twoColContainer">
-                     <div class="r-stack colLCLI">
+                     <div class="r-stack colLVid">
                        <div id="cp" class="fragment fade-in-then-out">
                          <h3>cp</h3>
                          "copy"<br>
@@ -492,7 +453,7 @@
             <section>
                 <h2>Checksums</h2><br>
                 <div class="twoColContainer">
-                 <div class="r-stack colLCLI">
+                 <div class="r-stack colLVid">
                    <div id="md5sum" class="fragment fade-in-then-out">
                      <h3>md5sum</h3>
                      generate MD5 hash<br>
@@ -544,7 +505,7 @@
             <section>
             <h2>Scripting</h2>
             <div class="twoColContainer">
-             <div class="r-stack colLCLI">
+             <div class="r-stack colLVid">
                <div id="find3" class="fragment fade-in-then-out">
                  <h3>find</h3>
                  execute a command<br>
