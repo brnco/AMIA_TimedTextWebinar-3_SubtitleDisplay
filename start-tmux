@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "starting tmux for AMIA Subtitle Display webinar development"
+
+tmux new-session -d -s "AMIA TTWS"
+tmux rename-window -t 0 "git"
+tmux send-keys -t "git" "cd ~/code/AMIA_TimedTextWebinar-3_SubtitleDisplay" C-m
+tmux send-keys -t "git" "git status" C-m
+tmux new-window -t "AMIA TTWS":1 -n "webinar"
+tmux send-keys -t "webinar" "cd ~/code/AMIA_TimedTextWebinar-3_SubtitleDisplay" C-m "nvim webinar.html" C-m
+tmux attach-session -t "AMIA TTWS"
