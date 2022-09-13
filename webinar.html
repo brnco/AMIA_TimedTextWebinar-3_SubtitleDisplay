@@ -89,16 +89,15 @@
         <div class="reveal">
             <div class="slides">
                 <section style="text-align:center;'">
-                    <h1>Web Display of Timed Text</h1><br>
+                    <h1>Timed Text Display</h1><br>
                     <h3>AMIA | 2022-09-15</h3><br>
                     <h5>with Brendan Coates (he|his)</h5><br>
                 </section>
                 <section>
                     <h3>Overview</h3>
                     <h5>What we are gonna learn about</h5><br>
-                    Uniqueness of text files<br><br>
-                    Link btw preservation and access<br>
-                    for these "related" files<br>
+                    Text files!<br><br>
+                    Link btw reservation and access strategies<br>
                 </section>
                 <section>
                     <h2>Subtitle Files</h2>
@@ -158,7 +157,9 @@
                             <h3>Style Guide</h3>
                             <div class="twoColContainer">
                                 <div class="colLEven">
+                                  <div style="margin:0 auto;">
                                     make one, share it
+                                  </div>
                                 </div>
                                 <div class="colREven">
                                     <img src="media/netflix-italics.png">
@@ -172,36 +173,36 @@
                     2. store subs separately
                 </section>
                 <section>
-                    <h2>Display Strategy</h2><br>
-                    <section>
-                    <div class="twoColContainer">
-			            <div class="r-stack colLVid">
-    			            <div class="fragment fade-in-then-out">
-        				        <h3>Embedded Text</h3>
-    			            </div>
-			            </div>
-  		                <div class="colRCLI">
-                            <video width="480" height="360" controls>
-                                <source src="media/embedded_subs1.mp4" type="video/mp4">
-                            </video>
+                  <h2>Display Strategy</h2><br>
+                  <section>
+                  <div class="twoColContainer">
+			                 <div class="r-stack colLVid">
+    			                  <div class="fragment fade-in-then-out">
+        				                  <h3>Embedded Subs</h3>
+    			                  </div>
+			                 </div>
+  		             <div class="colRCLI">
+                          <video width="480" height="360" controls>
+                          <source src="media/embedded_subs1.mp4" type="video/mp4">
+                          </video>
   			            </div>
-                        </div>
+                    </div>
                     </section>
                     <section>
                     <div class="twoColContainer">
 			            <div class="r-stack colLVid">
     			            <div class="fragment fade-in-then-out">
         				        <h3>Separate Text</h3>
-                                <img src="media/video-tag-w-subs-tracks.png">
+                        <img src="media/video-tag-w-subs-tracks.png">
     			            </div>
 			            </div>
-  		                <div class="colRCLI">
-                            <video width="480" height="360" controls>
-                                <source src="media/separate_subs1.mp4" type="video/mp4">
-                                    <track label="English" kind="subtitles" srclang="en" src="media/separate_subs1_subs_eng.vtt" default>
-                                    <track label="French" kind="subtitles" srclang="fr" src="media/separate_subs1_subs_fre.vtt">
+  		            <div class="colRCLI">
+                    <video width="480" height="360" controls>
+                        <source src="media/separate_subs1.mp4" type="video/mp4">
+                        <track label="English" kind="subtitles" srclang="en" src="media/separate_subs1_subs_eng.vtt" default>
+                        <track label="French" kind="subtitles" srclang="fr" src="media/separate_subs1_subs_fre.vtt">
         				    </video>
-                        </div>
+                    </div>
                     </div>
                     </section>
                 </section>
@@ -250,4 +251,3 @@
         </script>
     </body>
 </html>
-
