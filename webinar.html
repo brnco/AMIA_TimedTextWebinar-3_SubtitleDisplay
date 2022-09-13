@@ -106,11 +106,15 @@
                             <img src="media/vtt-txt_vtt-hex.png">
                         </section>
                         <section>
+                            <h3>VTT and SRT are basically the same</h3>
+                            <img src="media/diff-srt-vtt.png">
+                        </section>
+                        <section>
                             media files have other stuff going on<br><br>
                             <img src="media/wav-hex.png">
                         </section>
                         <section>
-                            <h3>.TXT is different than .docx</h3>
+                            <h3>.txt (or .vtt) is different than .docx</h3>
                             <img src="media/unzip-word-doc.png">
                         </section>
                         <section>
@@ -121,7 +125,7 @@
                             <h3>VTTs Can/ Do Contain Markup tho</h3>
                             <div class="twoColContainer">
                                 <div class="colLEven">
-                                    which then has to be parsed and rendered (/decoded)<br><br>
+                                    which then has to be parsed and rendered (i.e. decoded)<br><br>
                                     timecodes could be considered a kind of markup imo
                                 </div>
                                 <div class="colREven">
@@ -193,8 +197,8 @@
   		            <div class="colRCLI">
                     <video width="480" height="360" controls>
                         <source src="media/separate_subs1.mp4" type="video/mp4">
-                        <track label="English" kind="subtitles" srclang="en" src="media/separate_subs1_subs_eng.vtt" default>
-                        <track label="French" kind="subtitles" srclang="fr" src="media/separate_subs1_subs_fre.vtt">
+                        <track label="English" kind="subtitles" srclang="en" src="media/separate_subs1_eng.vtt" default>
+                        <track label="French" kind="subtitles" srclang="fr" src="media/separate_subs1_fre.vtt">
         				    </video>
                     </div>
                     </div>
@@ -219,16 +223,20 @@
                       </div>
                   </div>
                   <div class="colRCLI">
-                    <iframe
-                       src="https://player.twitch.tv/?channel=brnc0&parent=brnco.github.io"
-                       width="100%"
-                       height="100%"
-                       allowfullscreen="true"
-                       autoplay="false">
-                    </iframe>
+                    <video width="480" height="360" controls>
+                      <source src="media/separate_subs2.mp4" type="video/mp4">
+                      <track label="English" kind="subtitles" srclang="en" src="media/separate_subs2_eng.vtt" default>
+                      <track label="French" kind="subtitles" srclang="fr" src="media/separate_subs2_fre.vtt">
+                    </video>
                   </div>
                 </div>
             </section>
+          <section>
+            <h2>wrap up</h2>
+            1. consider access capabilities when deciding on your timed text preservation strategy<br><br>
+            2. consider styling timed text to make specific content more clear for users<br><br>
+            3. if you style your timed text, tell people why/ how
+          </section>
           <section>
             <h1>thank you!</h1>
           </section>
