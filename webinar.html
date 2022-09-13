@@ -96,8 +96,8 @@
                 <section>
                     <h3>Overview</h3>
                     <h5>What we are gonna learn about</h5><br>
-                    Text files!<br><br>
-                    Link btw reservation and access strategies<br>
+                    text files - what they are, what they're not<br><br>
+                    link btw preservation and access strategies
                 </section>
                 <section>
                     <h2>Subtitle Files</h2>
@@ -106,23 +106,23 @@
                             <img src="media/vtt-txt_vtt-hex.png">
                         </section>
                         <section>
-                            <h3>VTT and SRT are basically the same</h3>
-                            <img src="media/diff_srt-vtt.png">
-                        </section>
-                        <section>
                             media files have other stuff going on<br><br>
                             <img src="media/wav-hex.png">
                         </section>
                         <section>
-                            <h3>.txt (or .vtt) is different than .docx</h3>
+                            <h3>text is different than word</h3>
                             <img src="media/unzip-word-doc.png">
                         </section>
                         <section>
-                            <h3>Word Docs are Actually XML</h3>
+                            <h3>word docs are actually xml</h3>
                             <img src="media/less-word-doc.png">
                         </section>
                         <section>
-                            <h3>VTTs Can/ Do Contain Markup tho</h3>
+                            <h3>VTT and SRT are basically the same</h3>
+                            <img src="media/diff_srt-vtt.png">
+                        </section>
+                        <section>
+                            <h3>VTTs can/ do contain markup tho</h3>
                             <div class="twoColContainer">
                                 <div class="colLEven">
                                     which then has to be parsed and rendered (i.e. decoded)<br><br>
@@ -167,82 +167,98 @@
                 </section>
                 <section>
                     <h2>Preservation Strategy</h2>
-                    1. embed subs in media file<br>
-                    2. store subs separately
-                </section>
-                <section>
-                  <h2>Display Strategy</h2><br>
-                  <section>
-                  <div class="twoColContainer">
-			                 <div class="r-stack colLVid">
-    			                  <div class="fragment fade-in-then-out">
-        				                  <h3>Embedded Subs</h3>
-    			                  </div>
-			                 </div>
-  		             <div class="colRCLI">
-                          <video width="480" height="360" controls>
-                          <source src="media/embedded_subs1.mp4" type="video/mp4">
-                          </video>
-  			            </div>
-                    </div>
+                    <section>
+                      1. embed subs in media file<br>
+                      2. store subs separately
                     </section>
                     <section>
-                    <div class="twoColContainer">
-			            <div class="r-stack colLVid">
-    			            <div class="fragment fade-in-then-out">
-        				        <h3>Separate Text</h3>
-                        <img src="media/video-tag-w-subs-tracks.png">
-    			            </div>
-			            </div>
-  		            <div class="colRCLI">
-                    <video width="480" height="360" controls>
-                        <source src="media/separate_subs1.mp4" type="video/mp4">
-                        <track label="English" kind="subtitles" srclang="en" src="media/separate_subs1_eng.vtt" default>
-                        <track label="French" kind="subtitles" srclang="fr" src="media/separate_subs1_fre.vtt">
-        				    </video>
-                    </div>
-                    </div>
+                      <div class="twoColContainer">
+                        <div class="colLEven">
+                          <h3>embedded subs</h3>
+                          self-contained files
+                        </div>
+                        <div class="colREven">
+                          <h3>separate subs</h3>
+                          versioning<br>
+                          styling
+                        </div>
+                      </div>
                     </section>
                 </section>
+                </section>
                 <section>
-                    <h2>User Preferences</h2><br>
+                    <h2>Display Strategy</h2><br>
+                    <section>
                     <div class="twoColContainer">
-                      <div class="r-stack colLVid">
-                        <div class="fragment fade-out">
-                          <h3>Display Settings</h3>
-                          zoom<br>
-                          fonts<br>
-                          other shit<br>
+  			                 <div class="r-stack colLVid">
+      			                  <div class="fragment fade-in-then-out">
+          				                  <h3>Embedded Subs</h3>
+      			                  </div>
+  			                 </div>
+    		             <div class="colRCLI">
+                            <video width="480" height="360" controls>
+                            <source src="media/embedded_subs1.mp4" type="video/mp4">
+                            </video>
+    			            </div>
                       </div>
-                      <div class="fragment fade-in-then-out">
-                          <h3>Default vs. Preferred</h3>
-                          subtitle display order<br>
-                          1. most recent subs track in browser cache<br>
-                          2. language match for above<br>
-                          3. "default" subs track on video<br>
-                      </div>
+                      </section>
+                      <section>
+                      <div class="twoColContainer">
+      			            <div class="r-stack colLVid">
+          			            <div class="fragment fade-in-then-out">
+              				        <h3>Separate Text</h3>
+                              <img src="media/video-tag-w-subs-tracks.png">
+          			            </div>
+      			            </div>
+        		            <div class="colRCLI">
+                          <video width="480" height="360" controls>
+                              <source src="media/separate_subs1.mp4" type="video/mp4">
+                              <track label="English" kind="subtitles" srclang="en" src="media/separate_subs1_eng.vtt" default>
+                              <track label="French" kind="subtitles" srclang="fr" src="media/separate_subs1_fre.vtt">
+              				    </video>
+                          </div>
+                        </div>
+                        </section>
+                  </section>
+                  <section>
+                      <h2>User Preferences</h2><br>
+                      <div class="twoColContainer">
+                        <div class="r-stack colLVid">
+                          <div class="fragment fade-out">
+                            <h3>Display Settings</h3>
+                            zoom<br>
+                            fonts<br>
+                            other shit<br>
+                          </div>
+                        <div class="fragment fade-in-then-out">
+                            <h3>Default vs. Preferred</h3>
+                            subtitle display order<br>
+                            1. most recent subs track in browser cache<br>
+                            2. language match for above<br>
+                            3. "default" subs track on video<br>
+                        </div>
+                        </div>
+                    <div class="colRCLI">
+                      <video width="480" height="360" controls>
+                        <source src="media/separate_subs2.mp4" type="video/mp4">
+                        <track label="English" kind="subtitles" srclang="en" src="media/separate_subs2_eng.vtt" default>
+                        <track label="French" kind="subtitles" srclang="fr" src="media/separate_subs2_fre.vtt">
+                      </video>
+                    </div>
                   </div>
-                  <div class="colRCLI">
-                    <video width="480" height="360" controls>
-                      <source src="media/separate_subs2.mp4" type="video/mp4">
-                      <track label="English" kind="subtitles" srclang="en" src="media/separate_subs2_eng.vtt" default>
-                      <track label="French" kind="subtitles" srclang="fr" src="media/separate_subs2_fre.vtt">
-                    </video>
-                  </div>
-                </div>
+              </section>
+            <section>
+              <h2>wrap up</h2>
+              1. consider access capabilities when deciding on your timed text preservation strategy<br><br>
+              2. consider styling timed text to make specific content more clear for users<br><br>
+              3. if you style your timed text, tell people why/ how
             </section>
-          <section>
-            <h2>wrap up</h2>
-            1. consider access capabilities when deciding on your timed text preservation strategy<br><br>
-            2. consider styling timed text to make specific content more clear for users<br><br>
-            3. if you style your timed text, tell people why/ how
-          </section>
-          <section>
-            <h1>thank you!</h1>
-          </section>
+            <section>
+              <h1>thank you!</h1>
             </section>
-          </div><!-- end of <div class=slides> -->
-          </div><!-- end of <div class="reveal.js"> -->
+              </section>
+            </div><!-- end of <div class=slides> -->
+            </div><!-- end of <div class="reveal.js"> -->
         <script src="reveal.js/dist/reveal.js"></script>
         <script src="reveal.js/plugin/notes/notes.js"></script>
         <script src="reveal.js/plugin/markdown/markdown.js"></script>
